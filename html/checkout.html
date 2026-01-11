@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Quick Pharmacy Delivery</title>
+</head>
+<body>
+
+  <h1>Quick Pharmacy Delivery - Checkout</h1>
+
+<form action="thankyou.php" method="post">
+
+
+    <h2>Customer Details</h2>
+
+    <label>Full Name:</label><br>
+    <input type="text" name="fullname" required><br><br>
+
+    <label>Phone Number:</label><br>
+    <input type="tel" name="phone" required><br><br>
+
+    <h2>Delivery Address</h2>
+
+    <label>Address:</label><br>
+    <textarea name="address" rows="3" cols="30" required></textarea><br><br>
+
+    <h2>Payment Method</h2>
+
+    <input type="radio" name="payment" value="cod" required> Cash on Delivery<br>
+    <input type="radio" name="payment" value="upi"> UPI / Google Pay<br>
+    <input type="radio" name="payment" value="card"> Credit / Debit Card<br><br>
+
+    <input type="checkbox" required> I confirm that my details are correct.<br><br>
+    <a href="order-confirmed.html" style="display:inline-block; padding:10px 20px; background-color:green; color:white; text-decoration:none; border-radius:5px;">
+    ✅ Place Order
+   </a>
+  </form>
+
+</body>
+</html>
